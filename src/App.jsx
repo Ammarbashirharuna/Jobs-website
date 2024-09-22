@@ -1,8 +1,15 @@
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
+import { BrowserRouter as Router } from 'react-router-dom';
+
 const App = () => {
   return (
-    <div className="text-5xl">
-      <h2>Hello world</h2>
-    </div>
+    <>
+        <Router>
+      <Navbar />
+        <Hero />
+        </Router>
+    </>
   )
 }
 
